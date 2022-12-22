@@ -1,0 +1,16 @@
+[package]
+name = "fancy-match"
+version = "0.1.0"
+edition = "2021"
+description = "Proc macro attribute for more powerful string literal matching"
+license = "Unlicense"
+repository = "https://github.com/Johan-Mi/fancy-match"
+keywords = ["macro", "text", "utility", "string", "macros", "proc-macro"]
+categories = ["rust-patterns"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "1.0", features = ["full", "visit-mut"] }
+quote = "1.0"
